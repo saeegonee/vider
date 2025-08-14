@@ -4,12 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:vider"
+        AllowsTransparency="True"
+        Background="Transparent"
         mc:Ignorable="d"
         WindowStyle="None"
         ResizeMode="CanResize"
+        MouseDown="Move"
         Title="Vider" 
         Height="270" Width="480">
-    <Grid>
-
-    </Grid>
+    <Border Background="#0C0F12" CornerRadius="12">
+    
+    </Border>
 </Window>
