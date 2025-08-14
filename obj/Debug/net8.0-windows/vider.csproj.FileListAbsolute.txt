@@ -18,3 +18,4 @@ D:\_Others\vider\obj\Debug\net8.0-windows\refint\vider.dll
 D:\_Others\vider\obj\Debug\net8.0-windows\vider.pdb
 D:\_Others\vider\obj\Debug\net8.0-windows\vider.genruntimeconfig.cache
 D:\_Others\vider\obj\Debug\net8.0-windows\ref\vider.dll
+D:\_Others\vider\obj\Debug\net8.0-windows\vider.sourcelink.json

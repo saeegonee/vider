@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vider")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+893fdb1577b499759fbc59eb9b5e8555ca6e4dd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("vider")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vider")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
