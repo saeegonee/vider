@@ -11,8 +11,19 @@
         ResizeMode="CanResize"
         MouseDown="Move"
         Title="Vider" 
-        Height="270" Width="480">
-    <Border Background="#0C0F12" CornerRadius="12">
-    
+        WindowStartupLocation="Manual"
+        Left="2050"
+        Top="1000"
+        Height="270" 
+        Width="480">
+
+    <Border Background="#0C0F12" CornerRadius="14">
+        <Grid Margin="14">
+            <MediaElement Source="D:/_Others/vider/video.mp4" LoadedBehavior="Manual" Loaded="UserControl" Name="mediaElement" />
+            <StackPanel> 
+                <TextBlock Text="" TextWrapping="Wrap" FontSize="12" Foreground="Yellow" Name="log"/>
+            </StackPanel>
+        </Grid>
     </Border>
+
 </Window>

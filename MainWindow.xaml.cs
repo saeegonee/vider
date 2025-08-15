@@ -17,16 +17,42 @@ namespace vider;
 
 public partial class MainWindow : Window
 {
+    private bool _isPlaying = false;
+
     public MainWindow()
     {
         InitializeComponent();
     }
     
-    private void Move(object sender, RoutedEventArgs e)
+    private void Move(object sender, MouseButtonEventArgs e)
     {
-        if (Mouse.LeftButton == MouseButtonState.Pressed)
+        if (e.LeftButton == MouseButtonState.Pressed) 
         {
-            DragMove();
+            DragMove(); 
+            log.Text = $"({this.Top}, {this.Left})";
+        }
+    }
+
+    private void UserControl(object sender, RoutedEventArgs e)
+    {
+        var win = Window.GetWindow(this);
+        win.KeyDown += PlayToggle;
+    }
+    
+    private void PlayToggle(object sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.Space)
+        {
+            _isPlaying = !_isPlaying;
+        }
+
+        if (_isPlaying)
+        {
+            mediaElement.Play();
+        }
+        else
+        {
+            mediaElement.Pause();
         }
     }
 }
