@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Net;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -18,13 +19,14 @@ namespace vider;
 public partial class MainWindow : Window
 {
     private bool _isPlaying = false;
+    private byte[] _buff1 = new byte[4096];
+    private byte[] _buff2 = new byte[4096];
 
     public MainWindow()
     {
         InitializeComponent();
-        
-        // mediaElement.Source = new Uri("D:/_Others/vider/video.mp4");
-        mediaElement.Source = new Uri("https://v5-dtln.1internet.tv/video/multibitrate/video/2025/08/14/9e2f1922-569f-4075-a851-56506acb3ff5_HD-news-2025_08_14-23_09_33_,350,950,3800,8000,.mp4.urlset/index-f4-v1-a1.m3u8", UriKind.Absolute);
+
+        mediaElement.Source = new Uri("D:/_Others/vider/video.mp4");
     }
     
     private void Move(object sender, MouseButtonEventArgs e)

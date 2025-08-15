@@ -17,9 +17,19 @@
         Height="270" 
         Width="480">
 
-    <Border Background="#0C0F12" CornerRadius="14">
+    <Border ClipToBounds="True" Background="#0C0F12" CornerRadius="14">
         <Grid>
-            <MediaElement Source="D:/_Others/vider/video.mp4" LoadedBehavior="Manual" Loaded="UserControl" Name="mediaElement" />
+
+            <Rectangle HorizontalAlignment="Left" Height="270" Stroke="Black" VerticalAlignment="Top" Width="480" RadiusX="14" RadiusY="14">
+                <Rectangle.Fill>
+                    <VisualBrush>
+                        <VisualBrush.Visual>
+                            <MediaElement LoadedBehavior="Manual" Loaded="UserControl" Name="mediaElement" />
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
             <StackPanel Margin="14"> 
                 <TextBlock Text="" TextWrapping="Wrap" FontSize="12" Foreground="Yellow" Name="log"/>
             </StackPanel>
