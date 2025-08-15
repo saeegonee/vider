@@ -37,6 +37,7 @@ public partial class MainWindow : Window
     {
         var win = Window.GetWindow(this);
         win.KeyDown += PlayToggle;
+        win.KeyDown += Volume;
     }
     
     private void PlayToggle(object sender, KeyEventArgs e)
@@ -49,10 +50,26 @@ public partial class MainWindow : Window
         if (_isPlaying)
         {
             mediaElement.Play();
+            mediaElement.Volume = 0.1;
         }
         else
         {
             mediaElement.Pause();
+        }
+    }
+
+    private void Volume(object sender, KeyEventArgs e)
+    {
+        if (e.Key == Key.U)
+        {
+            mediaElement.Volume += 0.02f;
+            log.Text = "Volume +2";
+        }
+
+        if (e.Key == Key.I)
+        {
+            mediaElement.Volume -= 0.02f;
+            log.Text = "Volume -2";
         }
     }
 }
