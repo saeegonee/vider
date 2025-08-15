@@ -22,6 +22,9 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        
+        // mediaElement.Source = new Uri("D:/_Others/vider/video.mp4");
+        mediaElement.Source = new Uri("https://v5-dtln.1internet.tv/video/multibitrate/video/2025/08/14/9e2f1922-569f-4075-a851-56506acb3ff5_HD-news-2025_08_14-23_09_33_,350,950,3800,8000,.mp4.urlset/index-f4-v1-a1.m3u8", UriKind.Absolute);
     }
     
     private void Move(object sender, MouseButtonEventArgs e)

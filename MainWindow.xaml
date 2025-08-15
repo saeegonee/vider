@@ -18,9 +18,9 @@
         Width="480">
 
     <Border Background="#0C0F12" CornerRadius="14">
-        <Grid Margin="14">
+        <Grid>
             <MediaElement Source="D:/_Others/vider/video.mp4" LoadedBehavior="Manual" Loaded="UserControl" Name="mediaElement" />
-            <StackPanel> 
+            <StackPanel Margin="14"> 
                 <TextBlock Text="" TextWrapping="Wrap" FontSize="12" Foreground="Yellow" Name="log"/>
             </StackPanel>
         </Grid>
